@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;	
+  font-family: 'Roboto', 'sans-serif';
+  -webkit-box-sizing: border-box;
+  	 -moz-box-sizing: border-box;
+	      box-sizing: border-box;
+ }
+
+ body {
+	background-color: #FFFFFF;
+	font-size: 15px;
+}
+	
+.page {
+	width: 1000px;
+	height: 1000px;
+	margin: auto;
+	background-image: url("../img/background.jpg");
+}
+
+.container {
+	width: 650px;
+	height: 500px;
+	margin: auto;
+	position: relative;
+	top: 250px; 
+	display: flex;
+	flex-direction: row;	
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+	-webkit-border-radius: 10px;
+			border-radius: 10px;
+	overflow: auto;
+}
+
+.sidebar {
+	width: 150px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+}
+
+.controls {
+	height: 40px;
+	padding: 14px 15px 0px 15px;
+	background-color: #101022;
+}
+
+.controls__item {
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+			border-radius: 5px;
+}
+
+.controls__item--red {
+	background-color: #FF594D;
+}
+
+.controls__item--yellow {
+	background-color: #FFBC1B;
+}
+
+.controls__item--green {
+	background-color: #00CD46;
+}
+
+.filters {
+	height: 460px;
+	font-size: 14px;
+	background-color: #101022;
+	opacity: 0.9;
+}
+
+.nav {
+	position: absolute;
+	top: 40px;
+	width: inherit;
+}
+
+.nav__filter {
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.filter {
+	padding: 0px 15px;
+	line-height: 50px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.filter:hover,
+.filter:active {
+	background-color: #292A48;
+}
+
+.filter__img {
+	width: 15px;
+	height: 15px;
+	margin-right: 9px;
+	vertical-align: middle;
+}
+
+.filter__link {
+	color: #FFFFFF;
+}
+
+.filter__quantity {
+	color: #8A8995;
+}
+
+.filter--selected {
+	background-color: #292A48;
+}
+
+.frame {
+	width: 500px;
+	background-color: #F6F6F6;
+	padding: 0px 15px;
+	overflow: auto;
+}
+
+.issues__header {
+	margin-top: 11px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	color: #8A8995;
+}
+
+.issues__item {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	height: 40px;
+	padding: 0px 12px;
+	margin-top: 5px;
+	border: solid 1px #E0E0E0;
+	-webkit-border-radius: 5px;
+			border-radius: 5px;
+	color: #080606;
+	line-height: 40px;
+}
+
+.issues__btn {
+	margin-top: 12px;
+}
+
+.issues__icon--white {
+	stroke: #E0E0E0;
+	stroke-width: 1px;
+	fill: #FFFFFF;
+} 
+
